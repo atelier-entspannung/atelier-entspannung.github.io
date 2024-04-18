@@ -5,11 +5,11 @@ Built with [11ty](https://www.11ty.dev/).
 The site is built in `/src`, and built to `/public`.
 
 - Use `npm run serve` to serve the site.
-    - This command **does not** clean up the `/public` directory.
+  - This command **does not** clean up the `/public` directory.
 - Use `npm run build` to build the site to `/public`.
-    - This command **does** clean up the `/public` directory.
+  - This command **does** clean up the `/public` directory.
 - Deployment is automatically done, when pushing to GitHub using GitHub actions.
-
+  - **Warning**: The Repository is public!
 
 # Tutorial for 11ty: (My unpublished Blogpost)
 
