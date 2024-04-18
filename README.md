@@ -8,7 +8,7 @@ The site is built in `/src`, and built to `/public`.
     - This command **does not** clean up the `/public` directory.
 - Use `npm run build` to build the site to `/public`.
     - This command **does** clean up the `/public` directory.
-- Deployment not available yet...
+- Deployment is automatically done, when pushing to GitHub using GitHub actions.
 
 
 # Tutorial for 11ty: (My unpublished Blogpost)
