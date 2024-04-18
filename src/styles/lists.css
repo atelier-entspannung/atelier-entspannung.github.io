@@ -1,0 +1,23 @@
+ul {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0;
+    min-width: 250px;
+}
+
+li {
+    margin: 0.5rem 0;
+    display: flex;
+
+}
+
+li::before {
+    content: url('/images/check-circle-solid.svg');
+    left: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1em;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Körperglück - {{title}}</title>
+  <link rel="icon" type="image/svg" href="/images/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/styles/basic.css">
+  <link rel="stylesheet" href="/styles/header.css">
+  <link rel="stylesheet" href="/styles/footer.css">
+  <link rel="stylesheet" href="/styles/title.css">
+  <link rel="stylesheet" href="/styles/content.css">
+  <link rel="stylesheet" href="/styles/smallblock.css">
+  <link rel="stylesheet" href="/styles/lists.css">
+</head>
+<body>
+
+  {% include "snippets/header.html" %}
+
+  <div id="title" style="background-image: url('{{imageSource}}');">
+    <img src="/images/koerperglueck-{{headerColor}}.svg" alt="Körperglück">
+    <h2 style="color: {{headerColor}};">{{header}}</h2>
+  </div>
+
+  {{content}}
+
+  {% include "snippets/footer.html" %}
+</body>
+</html>
