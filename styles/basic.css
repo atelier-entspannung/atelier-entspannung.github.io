@@ -1,0 +1,54 @@
+h1 {
+    font-family: "Lora", serif;
+    font-weight: normal;
+    color: #111111;
+}
+h2 {
+    font-family: "Lora", serif;
+    font-weight: normal;
+    color: #111111;
+}
+h3 {
+    font-family: "Lora", serif;
+    font-weight: normal;
+    color: #111111;
+}
+h4 {
+    font-family: "Lora", serif;
+    font-weight: normal;
+    color: #111111;
+}
+
+html {
+    font-family: "Source Sans 3", sans-serif;
+    overflow-x: hidden;
+    font-weight: 300;
+}
+
+@media (min-width: 600px) {
+    h2 {
+        font-size: 2em;
+    }
+    html {
+        font-size: 18px;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #16877D;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #16877D;
+    text-decoration: underline;
+}
+
+img {
+    align-self: center;
+}

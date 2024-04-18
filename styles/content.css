@@ -1,0 +1,52 @@
+.content-block {
+    max-width: 80vw;
+    width: 100vh;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+
+.content-block h2 {
+    text-align: center;
+}
+
+.thin {
+    max-width: 50vw;
+    width: 70vh;
+}
+
+.wide {
+    max-width: 85vw;
+    width: 85vw;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.flex > * {
+    width: 30%;
+}
+
+.flex2 > * {
+    width: 45%;
+}
+
+.visual {
+    width: 100vw;
+    background-color: #DDDDDD;
+    padding: 1em 0;
+}
+
+.visual > div > *:first-child {
+    margin-top: 0;
+}
+
+.visual > div > *:last-child {
+    margin-bottom: 0;
+}
+
+.center {
+    text-align: center;
+}
