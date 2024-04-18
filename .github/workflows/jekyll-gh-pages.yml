@@ -23,7 +23,7 @@ jobs:
 
       - name: Install dependencies & build
         run: |
-          npm ci
+          npm ci --save-dev
           npm run build          
 
       - name: Deploy
