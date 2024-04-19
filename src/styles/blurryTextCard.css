@@ -1,0 +1,4 @@
+.blurryTextCard {
+    background-color: rgb(255 255 255 / 80%);
+    backdrop-filter: blur(7px) saturate(70%);
+}
