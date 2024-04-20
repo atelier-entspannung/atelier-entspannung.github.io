@@ -24,12 +24,15 @@
   <header>
     <nav>
         <div id="navigation-list">
-        <a href="/"><img src="/images/logo.svg" style="height: 2em;"></a>
+        <a href="/">Körperglück</a>
         <a href="/courses">Kurse</a>
-        <a href="/about">Über mich</a>
+        <a href="/beratung">Beratung</a>
+        <span></span>
         <a href="/methods">Methoden</a>
+        <a href="/about">Über mich</a>
         <a href="/contact">Kontakt</a>
         </div>
+        <span id="kringelContainer"><img id="kringel" src="/images/logo.svg" style="height: 2em;"></span>
     </nav>
 </header>
 
@@ -100,8 +103,8 @@
 
 <!-- <hr> -->
 
-<div class="visual" style="background-color: #fff; margin-bottom: -5em;">
-  <div class="visual" style="background-image: url('/images/schwung.png'); height: 3em; background-position: top; background-size: cover; background-color: #fff;"></div>
+<div class="visual" style="margin-bottom: -5em;">
+  <div class="visual" style="background-image: url('/images/schwung.svg'); height: 3em; background-position: top; background-size: cover;"></div>
   <div class="visual" style="background-color: #e1f0ee; padding-bottom: 3em;">
     <div class="content-block flex flex2">
       <img src="/images/portraitSquare.jpg" style="max-width: 200px; margin-right: 1em; border-radius: 100000px;">
@@ -126,6 +129,27 @@
         </div>
     </div>
     <!-- <img src="/images/logo-white-with-text.svg"> -->
+
+    <br>
+
+    <div class="flex" style="width: 80vw; text-align: center;"><a href="/AGB">AGB</a>
+    <a href="/datenschutz">Datenschutz</a>
+    <a href="/impressum">Impressum</a></div>
 </footer>
+
+
+
+  <script>
+    // smooth Scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 </body>
 </html>

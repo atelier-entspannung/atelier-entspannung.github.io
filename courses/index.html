@@ -24,12 +24,15 @@
   <header>
     <nav>
         <div id="navigation-list">
-        <a href="/"><img src="/images/logo.svg" style="height: 2em;"></a>
+        <a href="/">Körperglück</a>
         <a href="/courses">Kurse</a>
-        <a href="/about">Über mich</a>
+        <a href="/beratung">Beratung</a>
+        <span></span>
         <a href="/methods">Methoden</a>
+        <a href="/about">Über mich</a>
         <a href="/contact">Kontakt</a>
         </div>
+        <span id="kringelContainer"><img id="kringel" src="/images/logo.svg" style="height: 2em;"></span>
     </nav>
 </header>
 
@@ -67,7 +70,7 @@
 
 <br>
 
-<div class="visual" style="background-image: url('/images/welle.jpg'); background-repeat: no-repeat; background-size: cover; background-color: #FFF;">
+<div class="visual" style="background-image: url('/images/welle.jpg'); background-repeat: no-repeat; background-size: cover;">
 <div class="content-block wide flex">
   <div class="smallBlock blurryTextCard">
     <img src="/images/icon-gruppenkurs.svg" alt="" style="height: 3em; margin-top: 1em; margin-bottom: -1em;">
@@ -99,11 +102,13 @@
 </div>
 
 
-<div class="content-block">
+<div class="content-block thin">
   <h2>Nächste Kurse</h2>
-  <ul style="margin: 0 auto;">
-    <li>Voranzeige: Nächster Kurs in med. Autogenes Training in Volketswil ab dem 22. Oktober 2024</li>
-  </ul>
+  <ul>
+<li>Voranzeige: Nächster Kurs in Achtsamkeitsmeditation in der Kirche Kyburg ab dem 23.05.2024</li>
+<li>Voranzeige: Nächster Kurs in med. Autogenes Training in Volketswil ab dem 22. Oktober 2024</li>
+</ul>
+
 </div>
 
 
@@ -136,6 +141,27 @@
         </div>
     </div>
     <!-- <img src="/images/logo-white-with-text.svg"> -->
+
+    <br>
+
+    <div class="flex" style="width: 80vw; text-align: center;"><a href="/AGB">AGB</a>
+    <a href="/datenschutz">Datenschutz</a>
+    <a href="/impressum">Impressum</a></div>
 </footer>
+
+
+
+  <script>
+    // smooth Scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 </body>
 </html>

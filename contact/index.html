@@ -24,12 +24,15 @@
   <header>
     <nav>
         <div id="navigation-list">
-        <a href="/"><img src="/images/logo.svg" style="height: 2em;"></a>
+        <a href="/">Körperglück</a>
         <a href="/courses">Kurse</a>
-        <a href="/about">Über mich</a>
+        <a href="/beratung">Beratung</a>
+        <span></span>
         <a href="/methods">Methoden</a>
+        <a href="/about">Über mich</a>
         <a href="/contact">Kontakt</a>
         </div>
+        <span id="kringelContainer"><img id="kringel" src="/images/logo.svg" style="height: 2em;"></span>
     </nav>
 </header>
 
@@ -65,6 +68,27 @@
         </div>
     </div>
     <!-- <img src="/images/logo-white-with-text.svg"> -->
+
+    <br>
+
+    <div class="flex" style="width: 80vw; text-align: center;"><a href="/AGB">AGB</a>
+    <a href="/datenschutz">Datenschutz</a>
+    <a href="/impressum">Impressum</a></div>
 </footer>
+
+
+
+  <script>
+    // smooth Scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 </body>
 </html>

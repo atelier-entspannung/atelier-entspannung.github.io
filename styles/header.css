@@ -8,7 +8,7 @@ header a {
 
 #navigation-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 0;
     margin: 0;
@@ -20,13 +20,34 @@ header a {
 #navigation-list a {
     font-family: "Lora", serif;
     font-size: 1.25em;
-
+    z-index: 10;
 }
 
-@media (max-width: 600px) {
+#navigation-list span {
+    width: 5%;
+}
+
+@media (max-width: 800px) {
     #navigation-list {
         flex-direction: column;
         width: 100%;
         align-items: flex-begin;
     }
+
+    #kringel {
+        display: none;
+    }
+}
+
+#kringel {
+    position: absolute; 
+    left: 0; 
+    right: 0;
+    top: 2em;
+    margin: 0 auto; 
+    background-color: white;
+    padding: 0.5em;
+    border-radius: 10000px;
+    transform: scale(2);
+    z-index: 5;
 }
