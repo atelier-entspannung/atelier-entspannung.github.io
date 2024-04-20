@@ -34,7 +34,7 @@ layout: layouts/basic.html
 
 <br>
 
-<div class="visual" style="background-image: url('/images/welle.jpg'); background-repeat: no-repeat; background-size: cover; background-color: #FFF;">
+<div class="visual" style="background-image: url('/images/welle.jpg'); background-repeat: no-repeat; background-size: cover;">
 <div class="content-block wide flex">
   <div class="smallBlock blurryTextCard">
     <img src="/images/icon-gruppenkurs.svg" alt="" style="height: 3em; margin-top: 1em; margin-bottom: -1em;">
@@ -66,11 +66,9 @@ layout: layouts/basic.html
 </div>
 
 
-<div class="content-block">
+<div class="content-block thin">
   <h2>Nächste Kurse</h2>
-  <ul style="margin: 0 auto;">
-    <li>Voranzeige: Nächster Kurs in med. Autogenes Training in Volketswil ab dem 22. Oktober 2024</li>
-  </ul>
+  {% renderFile "./src/_includes/kurse.md" %}
 </div>
 
 
