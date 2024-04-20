@@ -34,3 +34,4 @@ jobs:
         with:
           publish_dir: ./public
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          cname: atelier-entspannung.ch
