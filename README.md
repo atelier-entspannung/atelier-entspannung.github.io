@@ -4,6 +4,15 @@ Built with [11ty](https://www.11ty.dev/).
 
 The site is built in `/src`, and built to `/public`.
 
+To edit "Nächste Kurse" (in `courses.html`): Edit `kurse.md`. **IMPORTANT**: use
+`**STRONG**` around events. This has two reasons:
+
+- It looks good
+- More importantly: It's a hotfix, because `<li>` elements use flex to add the
+bullet-point. Stuff breaks if you don't use it.
+
+## Deployment
+
 - Use `npm run serve` to serve the site.
   - This command **does not** clean up the `/public` directory.
 - Use `npm run build` to build the site to `/public`.

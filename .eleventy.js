@@ -6,6 +6,8 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addWatchTarget('src/styles');
     eleventyConfig.addPassthroughCopy('src/images');
     eleventyConfig.addWatchTarget('src/images');
+    eleventyConfig.addPassthroughCopy('src/resources');
+    eleventyConfig.addWatchTarget('src/resources');
     
     eleventyConfig.addPlugin(EleventyRenderPlugin);
 
