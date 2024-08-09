@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 3em 0;
+    padding: 3em 2em;
     min-height: 40vh;
     background-size: cover;
     background-position: center;
@@ -12,6 +12,7 @@
 
 #title img {
     height: 4em;
+    max-width: 80vw;
 }
 
 #title h2 {
@@ -19,6 +20,9 @@
 }
 
 @media (max-width: 600px) {
+    #title {
+        min-height: 20vh;
+    }
     #title h2 {
         font-size: 2em;
     }
