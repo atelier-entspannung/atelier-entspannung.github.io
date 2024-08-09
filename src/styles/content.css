@@ -33,6 +33,12 @@
     width: 45%;
 }
 
+@media (max-width: 600px) {
+    .flex2 > * {
+        width: 90%;
+    }
+}
+
 .visual {
     width: 100vw;
     padding: 1em 0;
