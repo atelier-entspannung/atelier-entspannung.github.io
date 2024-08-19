@@ -1,2 +1,1 @@
-- **Voranzeige: Nächster Kurs in Achtsamkeitsmeditation in der Kirche Kyburg ab dem 23.05.2024 ([Flyer](/resources/flyer-kyburg-2024-03.pdf))**
-- **Voranzeige: Nächster Kurs in med. Autogenes Training in Volketswil ab dem 22. Oktober 2024**
+- **Med. Autogenes Training in Volketswil ab dem 22. Oktober 2024: [Anmeldung](https://www.volketswil.ch/freizeit-und-kultur/kurse.html/250/event/12993/eventdate/79094)**
