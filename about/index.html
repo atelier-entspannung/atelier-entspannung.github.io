@@ -22,17 +22,58 @@
 <body>
 
   <header>
-    <nav>
+    <nav id="desktopNav">
         <div id="navigation-list">
-        <a href="/">Körperglück</a>
-        <a href="/courses">Kurse</a>
-        <a href="/beratung">Beratung</a>
+        <div class="menu" id="home">
+            <a href="/">Körperglück</a>
+        </div>
+
+        <div class="menu" id="entspannung">
+            <a>Entspannung</a>
+            <div class="sub">
+                <a href="/methods">med. Entspannungsmethoden</a>
+                <a href="/beratung">Beratung</a>
+                <a href="/courses">Kurse</a>
+            </div>
+        </div>
+
         <span></span>
-        <a href="/methods">Methoden</a>
-        <a href="/about">Über mich</a>
-        <a href="/contact">Kontakt</a>
+        <div class="menu" id="performanceCoaching">
+            <a>Auftrittscoaching</a>
+            <div class="sub">
+                <a href="/pep">PEP</a>
+                <a href="/coursesPerformance">Coaching</a>
+            </div>
+        </div>
+        <div class="menu" id="about">
+            <a href="/about">Über&nbsp;mich</a>
+        </div>
         </div>
         <span id="kringelContainer"><img id="kringel" src="/images/logo.svg" style="height: 2em;"></span>
+    </nav>
+
+    <nav id="mobileNav">
+        <div id="mobileNavContent">
+            <h4><a href="/">Körperglück</a></h4>
+            
+            <h4>Entspannung</h4>
+            <div class="sub">
+                <a href="/methods">med. Entspannungsmethoden</a>
+                <a href="/beratung">Beratung</a>
+                <a href="/courses">Kurse</a>
+            </div>
+            
+            <h4>Auftrittscoaching</h4>
+            <div class="sub">
+                <a href="/pep">PEP</a>
+                <a href="/coursesPerformance">Coaching</a>
+            </div>
+            
+            <h4><a href="/about">Über&nbsp;mich</a></h4>
+            <br>
+            <div class="mobileToggle" id="mobileOff" onclick="document.getElementById('mobileNavContent').style.display='none'; document.getElementById('mobileOn').style.display='block';"><i class="fa fa-bars" aria-hidden="true"></i></div>
+        </div>
+        <div class="mobileToggle" id="mobileOn" onclick="document.getElementById('mobileNavContent').style.display='block'; document.getElementById('mobileOn').style.display='none';"><i class="fa fa-bars" aria-hidden="true"></i></div>
     </nav>
 </header>
 
@@ -46,15 +87,25 @@
   <img src="/images/portrait.jpg" style="min-width: 200px; margin-right: 1em; border-radius: 100000px;">
   <div style="min-width: 200px;">
     <p>
-      Als Musikerin (<a href="https://klarinette.li/">www.klarinette.li</a>) wurde ich schon früh mit allen Facetten von Stress, Druck und Schmerzen konfrontiert. Zusätzlich erlebte ich durch eine chronische Krankheit Zeiten grosser Erschöpfung.
+      Als Klarinettistin (<a href="https://klarinette.li/">klarinette.li</a>) wurde ich früh mit den Herausforderungen von Stress, Leistungsdruck und körperlichen Schmerzen konfrontiert. Zusätzlich hat mich eine chronische Krankheit durch Phasen tiefer Erschöpfung geführt.
     </p>
     <p>
-      Aus meiner Not heraus fing ich an, mich in Körper-Themen weiterzubilden und suchte nach Veränderung, Schmerzfreiheit und Lebenskraft.
+      Diese Erfahrungen haben mich motiviert, mich intensiv mit dem Thema Körperbewusstsein zu beschäftigen. Auf meiner Suche nach Veränderung, Schmerzfreiheit und neuer Lebenskraft habe ich mich kontinuierlich weitergebildet.
     </p>
     <p>
-      Nach und nach veränderte sich mein Verstehen, Fühlen, Handeln und Erleben. Bis heute gilt dabei mein Interesse dem Zusammenspiel von Körper, Geist und Seele.
+      Im Laufe der Zeit hat sich mein Verständnis von der engen Verbindung zwischen Körper, Geist und Seele tiefgreifend verändert. Heute steht dieses Zusammenspiel im Mittelpunkt meiner Arbeit.
     </p>
   </div>
+</div>
+
+<div class="content-block">
+  <p>Ich bin Fachfrau für medizinische Entspannungsverfahren, darunter Progressive Muskelentspannung, Autogenes Training und Achtsamkeits-Interozeption®.<br>Zudem bin ich als Beraterin für Stress- und Selbstmanagement tätig.</p>
+  
+  <p>Im Jahr 2024 habe ich die Fortbildung in <a href="https://www.dr-michael-bohne.de/was-ist-pep.html">PEP<sup>®</sup> (nach Dr. Bohne)</a> erfolgreich abgeschlossen.</p>
+
+  <p>Seit 2019 bin ich außerdem Fachkraft für <a href="https://spiraldynamik.com/">Spiraldynamik</a> und bilde mich kontinuierlich weiter, um mein Wissen zu vertiefen.</p>
+
+  <p>Mein Angebot wird durch einen reichen Erfahrungsschatz ergänzt, der sich um das Thema „Körperglück“ dreht: das Gefühl, im eigenen Körper zu Hause und im Gleichgewicht zu sein.</p>
 </div>
 
 <div class="visual">
@@ -75,16 +126,9 @@
 
 
 <div class="content-block wide">
-<h2>«Meine Motivation ist es, Menschen auf ihrem Weg zu persönlichem Körperglück zu unterstützen und zu begleiten.»</h2>
+<h2>«Meine Leidenschaft ist es, Menschen auf ihrem Weg zu persönlichem Körperglück zu begleiten.»</h2>
 </div>
 
-<div class="content-block">
-  <p>Ich bin Fachfrau für medizinische Entspannungsverfahren (med. Progressive Muskelentspannung, med. Autogenes Training und med. Achtsamkeits-Interozeption®) und Beraterin für Stress- und Selbstmanagement.</p>
-
-  <p>Seit 2019 bin ich Fachkraft für Spiraldynamik <a href="https://spiraldynamik.com/">www.spiraldynamik.com</a> und bilde mich laufend weiter.</p>
-
-  <p>Ergänzt wird mein Angebot durch einen reichen Schatz an Erfahrungen rund um das Thema Körperglück.</p>
-</div>
 
   <footer>
     <h2>Starte deine Entspannungsreise!</h2>

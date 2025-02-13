@@ -22,17 +22,58 @@
 <body>
 
   <header>
-    <nav>
+    <nav id="desktopNav">
         <div id="navigation-list">
-        <a href="/">Körperglück</a>
-        <a href="/courses">Kurse</a>
-        <a href="/beratung">Beratung</a>
+        <div class="menu" id="home">
+            <a href="/">Körperglück</a>
+        </div>
+
+        <div class="menu" id="entspannung">
+            <a>Entspannung</a>
+            <div class="sub">
+                <a href="/methods">med. Entspannungsmethoden</a>
+                <a href="/beratung">Beratung</a>
+                <a href="/courses">Kurse</a>
+            </div>
+        </div>
+
         <span></span>
-        <a href="/methods">Methoden</a>
-        <a href="/about">Über mich</a>
-        <a href="/contact">Kontakt</a>
+        <div class="menu" id="performanceCoaching">
+            <a>Auftrittscoaching</a>
+            <div class="sub">
+                <a href="/pep">PEP</a>
+                <a href="/coursesPerformance">Coaching</a>
+            </div>
+        </div>
+        <div class="menu" id="about">
+            <a href="/about">Über&nbsp;mich</a>
+        </div>
         </div>
         <span id="kringelContainer"><img id="kringel" src="/images/logo.svg" style="height: 2em;"></span>
+    </nav>
+
+    <nav id="mobileNav">
+        <div id="mobileNavContent">
+            <h4><a href="/">Körperglück</a></h4>
+            
+            <h4>Entspannung</h4>
+            <div class="sub">
+                <a href="/methods">med. Entspannungsmethoden</a>
+                <a href="/beratung">Beratung</a>
+                <a href="/courses">Kurse</a>
+            </div>
+            
+            <h4>Auftrittscoaching</h4>
+            <div class="sub">
+                <a href="/pep">PEP</a>
+                <a href="/coursesPerformance">Coaching</a>
+            </div>
+            
+            <h4><a href="/about">Über&nbsp;mich</a></h4>
+            <br>
+            <div class="mobileToggle" id="mobileOff" onclick="document.getElementById('mobileNavContent').style.display='none'; document.getElementById('mobileOn').style.display='block';"><i class="fa fa-bars" aria-hidden="true"></i></div>
+        </div>
+        <div class="mobileToggle" id="mobileOn" onclick="document.getElementById('mobileNavContent').style.display='block'; document.getElementById('mobileOn').style.display='none';"><i class="fa fa-bars" aria-hidden="true"></i></div>
     </nav>
 </header>
 
@@ -45,7 +86,7 @@
 
 <div class="content-block flex wide">
     <div class="smallBlock">
-        <h3>med. PME</h3>
+        <h3>Progressive&nbsp;Muskelentspannung</h3>
         <ul style="text-align: left;">
             <li>bewährte Entspannungsmethode</li>
             <li>einfacher Einstieg in die Entspannung</li>
@@ -54,7 +95,7 @@
         <a href="#PME">Mehr zu med. Progressiver Muskelentspannung</a>
     </div>
     <div class="smallBlock">
-        <h3>med. AT</h3>
+        <h3>Autogenes&nbsp;Training</h3>
         <ul style="text-align: left;">
             <li>reduziert innere Anspannung und Unruhe</li>
             <li>fördert guten Schlaf und reguliert Emotionen</li>
@@ -63,7 +104,7 @@
        <a href="#AT">Mehr zu med. Autogenem Training</a>
     </div>
     <div class="smallBlock">
-        <h3>med. AI<sup>®</sup></h3>
+        <h3>Achtsamkeitsmeditation</h3>
         <ul style="text-align: left;">
             <li>verbessert die Körperwahrnehmung</li>
             <li>fördert  tiefe Stille und Ruhe</li>
